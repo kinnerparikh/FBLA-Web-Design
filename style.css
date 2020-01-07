@@ -5,13 +5,13 @@
     font-family: "Open Sans", sans-serif;
   }
   body {
+    /* Main Background */
     background-color: #fdfdfd;
     color: #383b47;
   }
   
   
-  /* Header */
-  
+  /* Header */  
   header {
     position: fixed;
     height: 75px;
@@ -55,7 +55,6 @@
   .navbar {
     float: right;
   }
-  
   .navbar a {
     height: 75px;
     display: inline-block;
@@ -66,8 +65,10 @@
     color: #fdfdfd;
   }
   .navbar a:hover {
+    text-shadow: 2px 2px;
     background-color: #0171b2;
   }
+
   
   /* main margin fix */
   main {
