@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Infinity Airlines</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+        <style>
+        
+            .js-loading * {
+            animation-play-state: paused !important;
+            }
+    
+    
+        main {
+            position: relative;
+            overflow: hidden;
+        }
+        main img {
+            filter: brightness(70%);
+        }
+        
+        @keyframes intro-text {
+            from {
+                top: 30%;
+                opacity: 0;
+            }
+            to {
+                top: 50%;
+                opacity: 1;
+            }
+        }
+        .hero-text {
+            text-align: center;
+            color: #fdfdfd;
+            font-family: "Alata", sans-serif;
+            position: absolute;
+            width: 80%;
+            left: 50%;
+            font-size: 6vw;
+            font-weight: 700;
+            transform: translate(-50%, -50%);
+            animation: 0.8s intro-text forwards;
+            }
+        .content {
+            text-align: left;
+            margin: 0 6vw;
+            color: #282833;
+        }
+        .content div {
+            overflow: auto;
+            padding: 20px 0px;
+        }
+        .content img {
+            float: right;
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        #float-left {
+            float: left;
+            padding-left: 0;
+            padding-right: 1.5vw;
+        }
+        
+        /* Tablet Responsive */
+        @media screen and (max-width: 1150px) {
+            main img {
+            width: 120%;
+            transform: translate(-10%);
+            }
+            .hero-text {
+            font-size: 9vw;
+            }
+            .content img {
+            width: 40%;
+            padding-left: 15px;
+            padding-bottom: 7.5px;
+            }
+        }
+        #float-left {
+            padding-right: 5vw;
+        }
+        
+        /* Phone Responsive */
+        @media screen and (max-width: 670px) {
+            main img {
+            width: 185%;
+            transform: translate(-23%);
+            }
+            .hero-text {
+            font-size: 11vw;
+            }
+            .content {
+            margin: 3.5vw;
+            }
+            .content img {
+            width: 48%;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            }
+            #float-left {
+            padding-right: 2.5vw;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+            document.body.classList.add('js-loading');
+            window.addEventListener("load", showPage);
+            function showPage() {
+                document.body.classList.remove('js-loading')
+            }
+        </script>
+
+        <header>
+            <div class="title">
+            <a href="index.html"><img src="images/logo.png" alt="logo" height="65px" width="auto"></a>
+            <a href="index.html"><h1>Eastfront Airlines</h1></a>
+            </div>
+            <div class="navbar">
+            <a href="about-us.html">About Us</a>
+            <a href="book-a-flight.html">Book a Flight</a>
+            <a href="rewards-program.html">Rewards Program</a>
+            <a href="careers.html">Careers</a>
+            </div>
+        </header>
+
+        <main>
+            <img src="images/about-us-heroimage.jpg" alt="" width="100%" height="auto">
+            <div class="hero-text">About Us</div>
+        </main>
+
+
+    </body>
+
+</html>
