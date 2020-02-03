@@ -192,7 +192,18 @@
         <div><p>First Name:</p><input type="text"></div>
         <div><p>Last Name:</p><input type="text"></div>
         <div><p>Email:</p><input type="text"></div>
-        <div><p>Desired Job:</p><input type="text"></div>
+        <div><p>Desired Job:</p>
+          <select id="jobs">
+            <option value="none">Select One</option>
+            <option value="pilot">Pilot</option>
+            <option value="flight-attendant">Flight Attendant</option>
+            <option value="customer-service">Customer Service Agent</option>
+            <option value="gate-agent">Gate Agent</option>
+            <option value="flight-operations">Flight Operations Specialist</option>
+            <option value="ramp-agent">Ramp Service Agent</option>
+            <option value="custodian">Airplane Cabin Cleaner</option>
+          </select>
+        </div>
         <div><p class="para-textarea">Honorable Degrees or Achievements:</p><textarea class="small-textarea"></textarea></div>
         <div><p class="para-textarea">Why do you want to join Airlines?</p><textarea class="big-textarea"></textarea></div>
         <button onclick="alert('Thank you for submitting a job application!')">Submit</button>
